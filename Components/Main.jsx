@@ -1,4 +1,5 @@
 import React from 'react'
+import Available from './Available'
 import { MainContainer } from './Styled'
 
 const Main = () => {
@@ -11,9 +12,22 @@ const Main = () => {
             </p>
         </div>
 
+        <div className="available_container">
+          <h2>Available Tickets</h2>
         <div className="availables">
+            {
+              [1,2,3,4,5].map((a, n)=>{
+                return(
+                  <>
+                    <Available key={n}/>
+                  </>
+                )
+              })
+            }
             
         </div>
+        </div>
+        
     </MainContainer>
   )
 }

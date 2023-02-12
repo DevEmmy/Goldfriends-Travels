@@ -299,8 +299,46 @@ export const MainContainer = styled.div`
             line-height: 1.5;
         }
     }
+
+    .availables{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 30px 0;
+
+      @media (max-width: 700px){
+        grid-template-columns: none;
+      }
+    }
+
+    .available_container{
+      margin: 100px 0;
+
+      h2{
+        text-align: center;
+      }
+    }
 `
 
 export const AvailableContainer = styled.div`
-    
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+  border-radius: 20px;
+  cursor: pointer;
+
+    .top{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      img{
+        width: 50px;
+        height: 50px;
+        clip-path: circle();
+      }
+    }
+
+    p{
+      padding: 10px 0;
+    }
 `
