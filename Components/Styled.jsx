@@ -347,3 +347,56 @@ export const AvailableContainer = styled.div`
       padding: 10px 0;
     }
 `
+
+export const Auth = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+
+    @media (max-width: 700px){
+      width: 100%;
+    }
+  }
+
+  input {
+    padding: 13px 20px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid rgb(100, 100, 100);
+
+    @media (max-width: 700px){
+      width: 100%;
+    }
+
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #b18641;
+    padding: 15px;
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+
+    @media (max-width: 700px){
+      width: 100%;
+    }
+  }
+`;
