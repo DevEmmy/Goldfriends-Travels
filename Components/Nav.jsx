@@ -50,7 +50,7 @@ const Nav = ({ active = 0 }) => {
         </div>
       </div>
 
-      <div className="hamburger">
+      {/* <div className="hamburger">
         <div className="icon">
           <HiMenuAlt3 size={"30px"} onClick={showWidth}/>
         </div>
@@ -72,7 +72,7 @@ const Nav = ({ active = 0 }) => {
             <Link href={"/contact"}>Contact Us</Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </NavStyle>
   );
 };

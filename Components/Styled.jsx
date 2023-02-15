@@ -124,10 +124,10 @@ export const NavStyle = styled.div`
       .center{
         display: none;
       }
-
+/* 
       .signUp{
         display: none;
-      }
+      } */
       
       .hamburger{
         display: block;
