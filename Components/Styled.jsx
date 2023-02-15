@@ -23,20 +23,6 @@ export const NavStyle = styled.div`
   background-color: transparent;
   /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.09); */
 
-  @media (max-width: 700px){
-    justify-content: space-between;
-    padding: 20px;
-
-    img{
-      width: 60px;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
   .logo {
     color: #b18641;
     font-size: 30px;
@@ -46,6 +32,25 @@ export const NavStyle = styled.div`
       width: 200px;
     }
   }
+
+  @media (max-width: 700px){
+    justify-content: space-between;
+    padding: 20px;
+
+    .logo{
+      img{
+      width: 100px;
+    }
+    }
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  
 
   .center {
     display: flex;
